@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chính Sách Quyền Riêng Tư | Privacy Policy - Heo Đất Béo (SatsBoy87)</title>
-    <meta name="description" content="Chính sách quyền riêng tư của ứng dụng Heo Đất Béo (com.satsboy87.heodatbeo) phát triển bởi SatsBoy87.">
+    <title>Privacy Policy | Chính Sách Quyền Riêng Tư - Heo Đất Béo (SatsBoy87)</title>
+    <meta name="description" content="Privacy Policy for Heo Đất Béo (com.satsboy87.heodatbeo) developed and published by SatsBoy87 on Google Play Store.">
     <meta name="author" content="SatsBoy87">
     <link rel="icon" type="image/jpeg" href="icon.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -292,14 +292,14 @@
                 <img src="icon.jpg" alt="Heo Đất Béo App Icon" class="app-icon" onerror="this.style.display='none'">
                 <span style="font-weight: 600;">Google Play Store App Information</span>
             </div>
-            <h1 id="title-text">Chính Sách Quyền Riêng Tư</h1>
+            <h1 id="title-text">Privacy Policy</h1>
             <p class="sub-header" id="subtitle-text">
-                Ứng dụng: <strong>Heo Đất Béo</strong> | Nhà phát triển: <strong>SatsBoy87</strong>
+                App: <strong>Heo Đất Béo</strong> | Developer: <strong>SatsBoy87</strong>
             </p>
 
             <div class="lang-switch" role="tablist">
-                <button type="button" class="lang-btn active" id="btn-vi" onclick="switchLanguage('vi')">🇻🇳 Tiếng Việt</button>
-                <button type="button" class="lang-btn" id="btn-en" onclick="switchLanguage('en')">🇬🇧 English</button>
+                <button type="button" class="lang-btn active" id="btn-en" onclick="switchLanguage('en')">🇬🇧 English</button>
+                <button type="button" class="lang-btn" id="btn-vi" onclick="switchLanguage('vi')">🇻🇳 Tiếng Việt</button>
             </div>
         </div>
     </header>
@@ -309,38 +309,38 @@
         <section class="meta-card" aria-label="Application Identification">
             <div class="meta-title">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                <span id="meta-card-heading">Xác thực danh tính ứng dụng & Nhà phát triển (Google Play)</span>
+                <span id="meta-card-heading">App & Developer Identification Verification (Google Play)</span>
             </div>
             <div class="meta-grid">
                 <div class="meta-item">
-                    <span class="meta-label">Tên ứng dụng (App Name)</span>
+                    <span class="meta-label">App Name (Tên ứng dụng)</span>
                     <span class="meta-value highlight">Heo Đất Béo</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-label">Mã gói (Package Name / App ID)</span>
+                    <span class="meta-label">Package Name / App ID (Mã gói)</span>
                     <span class="meta-value highlight">com.satsboy87.heodatbeo</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-label">Nhà phát triển (Developer Name)</span>
+                    <span class="meta-label">Developer Name (Nhà phát triển)</span>
                     <span class="meta-value highlight">SatsBoy87</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-label">Email hỗ trợ (Contact Email)</span>
+                    <span class="meta-label">Support Email (Email hỗ trợ)</span>
                     <span class="meta-value"><a href="mailto:quoctuanit87@gmail.com">quoctuanit87@gmail.com</a></span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-label">Số điện thoại (Hotline / Phone)</span>
+                    <span class="meta-label">Phone / Hotline (Số điện thoại)</span>
                     <span class="meta-value">+84 354 309 632 (035 430 9632)</span>
                 </div>
                 <div class="meta-item">
-                    <span class="meta-label">Ngày hiệu lực (Effective Date)</span>
-                    <span class="meta-value">26/10/2026</span>
+                    <span class="meta-label">Effective Date (Ngày hiệu lực)</span>
+                    <span class="meta-value">October 26, 2026</span>
                 </div>
             </div>
         </section>
 
         <!-- VIETNAMESE CONTENT -->
-        <article class="content-card" id="content-vi">
+        <article class="content-card hidden" id="content-vi">
             <div class="section-block">
                 <h2>1. Giới thiệu & Định danh nhà phát triển</h2>
                 <p>
@@ -442,7 +442,7 @@
         </article>
 
         <!-- ENGLISH CONTENT -->
-        <article class="content-card hidden" id="content-en">
+        <article class="content-card" id="content-en">
             <div class="section-block">
                 <h2>1. Introduction & Developer Identification</h2>
                 <p>
@@ -555,6 +555,7 @@
             const btnVi = document.getElementById('btn-vi');
             const btnEn = document.getElementById('btn-en');
             const titleText = document.getElementById('title-text');
+            const subtitleText = document.getElementById('subtitle-text');
             const metaHeading = document.getElementById('meta-card-heading');
 
             if (lang === 'en') {
@@ -563,6 +564,7 @@
                 btnVi.classList.remove('active');
                 btnEn.classList.add('active');
                 titleText.textContent = 'Privacy Policy';
+                subtitleText.innerHTML = 'App: <strong>Heo Đất Béo</strong> | Developer: <strong>SatsBoy87</strong>';
                 metaHeading.textContent = 'App & Developer Identification Verification (Google Play)';
                 document.documentElement.lang = 'en';
             } else {
@@ -571,6 +573,7 @@
                 btnVi.classList.add('active');
                 btnEn.classList.remove('active');
                 titleText.textContent = 'Chính Sách Quyền Riêng Tư';
+                subtitleText.innerHTML = 'Ứng dụng: <strong>Heo Đất Béo</strong> | Nhà phát triển: <strong>SatsBoy87</strong>';
                 metaHeading.textContent = 'Xác thực danh tính ứng dụng & Nhà phát triển (Google Play)';
                 document.documentElement.lang = 'vi';
             }
